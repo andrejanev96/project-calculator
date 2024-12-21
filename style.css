@@ -1,0 +1,34 @@
+#calculator {
+  max-width: 300px;
+  margin: 50px auto;
+  text-align: center;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#display {
+  height: 40px;
+  font-size: 24px;
+  text-align: right;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  padding: 5px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.operator {
+  background-color: #f0ad4e;
+}
+
+.operator.pressed {
+  background-color: #ffc107; /* Highlight */
+  transform: scale(1.1); /* Slightly enlarge */
+  transition: transform 0.1s ease, background-color 0.1s ease;
+}

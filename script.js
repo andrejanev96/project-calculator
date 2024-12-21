@@ -95,6 +95,9 @@ document.querySelectorAll(".digit").forEach((button) => {
 
 document.querySelectorAll(".operator").forEach((button) => {
   button.addEventListener("click", () => {
+    // Call the operator handler
+    handleOperator(button.textContent);
+
     // Add the 'pressed' class
     button.classList.add("pressed");
 
@@ -104,5 +107,6 @@ document.querySelectorAll(".operator").forEach((button) => {
     }, 150);
   });
 });
+
 document.getElementById("equals").addEventListener("click", handleEquals);
 document.getElementById("clear").addEventListener("click", clearCalculator);
